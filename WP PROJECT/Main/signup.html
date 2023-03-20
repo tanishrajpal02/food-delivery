@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			text-align: center;
+            background: url(subg.jpg);
+            background-size: 140%;
+			background-position: 50%;
+    
+            
+		}
+
+		form {
+			display: inline-block;
+			text-align: left;
+			margin-top: 20px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+			color: #555;
+		}
+
+		input[type="text"],
+		input[type="tel"],
+		input[type="email"],
+		input[type="password"],
+		textarea {
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 16px;
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+		}
+
+		input[type="submit"] {
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #0069d9;
+		}
+	</style>
+</head>
+<body>
+    
+
+    
+	<h1 style="color: rgb(239, 239, 244); font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx large; font-weight: 400;"> <i>Sign up Below</i></h1>
+	<div>
+		<form style="background-blend-mode: lighten;">
+			<label for="name" style="color: #fff;">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="E-Mail" style="color: #fff;">E-Mail :</label>
+			<input type="email" id="E-Mail" name="E-Mail" required> 
+
+			<label for="pw" style="color: #fff;">Password :</label>
+			<input type="password" id="pw" name="pw" required> 
+
+			<label for="cpw" style="color: #fff;">Confirm Password :</label>
+			<input type="password" id="cpw" name="cpw" required> 
+
+			<label for="address" style="color: #fff;">Address:</label>
+			<textarea id="address" name="address" required></textarea>
+
+			<label for="phone" style="color: #fff;">Phone Number:</label>
+			<input type="tel" id="phone" name="phone" required> 
+
+			<label for="state" style="color: #fff;">State:</label>
+			<input type="text" id="state" name="state" required>
+
+			<label for="city" style="color: #fff;">City:</label>
+			<input type="text" id="city" name="city" required>
+
+			<label for="pincode" style="color: #fff;">Pincode:</label>
+			<input type="text" id="pincode" name="pincode" required>
+			
+			
+			
+
+			<input type="submit" value="Submit" style="background: url(subg.jpg);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+		</form>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food</title>
+	<style>
+
+	.gfg{
+		background-color: antiquewhite;
+		border: 2px solid gray;
+		text-align: center;
+		margin: 10px 30px;
+		
+	}
+		#login {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 350px;
+        height: 600px;
+        padding: 20px;
+		margin-top: 5%;
+		margin-right: 1%;
+		background-image:url(subg.jpg);
+		background-size: 375%;
+		background-position-x: 15%;
+		background-position-y: 15%;
+		
+		font-size: xx-large;
+      }
+      
+	body {
+		font-family: Helvetica, sans-serif;
+		height: 750px;
+        width: 100px;
+		text-align: center;
+		font-size: 50;
+		background-color: black;
+		background-repeat: no-repeat;
+		
+	}
+	
+	/* Styling the area of the slides */
+	
+	#slideshow {
+		overflow: hidden;
+		height: 750px;
+		width: 1105px;
+		margin: 0 auto;
+		
+	}
+	
+	/* Style each of the sides
+	with a fixed width and height */
+	
+	.slide {
+		float: left;
+		height: 750px;;
+		width: 1100px;
+		margin-top: 25px;
+		margin-left: 10px;
+	}
+	
+	/* Add animation to the slides */
+	
+	.slide-wrapper {
+		
+		/* Calculate the total width on the
+	basis of number of slides */
+		width: calc(1100px * 5);
+		
+		/* Specify the animation with the
+	duration and speed */
+		animation: slide 20s ease infinite;
+	}
+	
+	/* Set the background color
+	of each of the slides */
+	
+	.slide:nth-child(1) {
+		background: url(subg2.jpg);
+	}
+	
+	.slide:nth-child(2) {
+		background: url(burger1.jpg);
+	}
+	
+	.slide:nth-child(3) {
+		background: url(bg1.jpg);
+	}
+	
+	.slide:nth-child(4) {
+		background: url(smokedwrapp.avif);
+	}
+	
+	/* Define the animation
+	for the slideshow */
+	
+	@keyframes slide {
+		
+		/* Calculate the margin-left for
+	each of the slides */
+		10% {
+			margin-left: 0px;
+		}
+		35% {
+			margin-left: calc(-1100px * 1);
+		}
+		60% {
+			margin-left: calc(-1100px * 2);
+		}
+		85% {
+			margin-left: calc(-1100px * 3);
+		}
+		96% {
+			margin-left: calc(-1100px * 3);
+		}
+		
+	}
+  
+	</style>
+</head>
+
+<body>
+
+	
+	<!-- Define the slideshow container -->
+	<div id="slideshow">
+		<div class="slide-wrapper">
+			
+			<!-- Define each of the slides
+		and write the content -->
+			<div class="slide"; style="background: url(subg2.jpg); background-size:120%;">
+			</div>
+			<div class="slide"; style="background: url(burger1.jpg); background-size: 90%;">
+			</div>
+			<div class="slide"; style="background: url(smokedwrapp.jpg); background-size: 150%;">
+			</div>
+			<div class="slide"; style="background: url(bg1.jpg); background-size: cover;">
+			</div>
+
+		</div>
+	</div>
+	<div id="login">
+		<h2 style="color: gold; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: 500; margin-top: -5%;"> <i>Login Here</i></h2>
+		<form style="margin-top: 0%;">
+		  <label for="Email" style="color:coral;font-family: fantasy;"> <i>Email ID:</i> </label>
+		  <input type="email" id="Email" name="Email" required style="font-size: 85%;"><br><br>
+		  <label for="password" style="color:coral;font-family: fantasy;"> <i>Password:</i> </label>
+		  <input type="password" id="password" name="password" required style="font-size: 85%;"><br><br>
+		  <input type="submit" value="Login" style="font-size: large;">
+	<hr>	  
+	 <h3 style="color: gold; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: 500; margin-top: 7%;"> <i>New User ?</i></h2>
+	<button class="gfg"
+			onclick="window.location.href='signup.html';" style="font-size: large; margin-top: -6%;" >
+		CLICK HERE TO SIGN UP!
+		</button>
+		</form>
+	  </div>
+
+</body>
+</html>
